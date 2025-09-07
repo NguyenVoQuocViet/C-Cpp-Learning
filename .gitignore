@@ -1,0 +1,8 @@
+*.bin
+*.exe 
+.cph
+.vscode 
+.env 
+baitap
+ontapcuoiki 
+*.txt 
