@@ -3,6 +3,7 @@
 using namespace std;
 
 //push_back
+//pop_back
 //size
 //clear : xoa toan bo
 //empty : check rong (true, fasle)
@@ -20,8 +21,5 @@ int main()
     v.insert(v.begin() + 3, 10);
     for(it = v.begin(); it != v.end(); it++) //v.begin() + x : tro den vi tri x
         cout << *it << " ";    
-    cout << endl;
-    v.clear();
-    cout << v.empty() << endl;
     return 0;
 }
