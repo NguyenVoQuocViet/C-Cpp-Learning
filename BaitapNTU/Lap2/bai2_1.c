@@ -18,34 +18,28 @@ void nhap(int a[], int *n)
 
 void timSoAm(int a[], int n)
 {
-	int check = 0, i;
-	for(i = 0; i < n; i++)
+	int i = 0;
+	int linhcanh = -1;
+	a[n] = linhcanh;
+	while(a[i] >= 0)
 	{
-		if(a[i] < 0)
-		{
-			printf("vi tri: %d, gia tri: %d\n", i, a[i]);
-			check = 1;
-			break;
-		}
+		i++;
 	}
-	if(!check)
-	{
-		printf("Khong co so am\n");
-	}
+	if(i == n)
+		printf("khong co so am\n");
+	else
+		printf("so am dau tien: %d %d\n", i, a[i]);
 }
 
 int timX(int a[], int n, int x)
 {
-	int check = 0, i;
-	for(i = 0; i < n; i++)
+	a[n] = x;
+	int i = 0;
+	while(a[i] != x)
 	{
-		if(x == a[i])
-		{
-			check = 1;
-			break;
-		}
+		i++;
 	}
-	return check;
+	return i != n;		
 }
 
 int dayGiamDan(int a[], int n)

@@ -65,7 +65,7 @@ int tongNguyenDuong(int a[], int n)
 int main()
 {
 	srand(time(NULL));
-	char *s = "DaySo.txt";
+	char *s = "DaySo.inp";
 	int n;
 	ngauNhien(s, &n);
 	int a[n];

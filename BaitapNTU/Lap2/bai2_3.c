@@ -97,8 +97,8 @@ void timMax(char *kq, int a[][MAX], int n)
 int main()
 {
 	int n;
-	char *s = "MaTran.txt";
-	char *kq = "KetQua.txt";
+	char *s = "MaTran.inp";
+	char *kq = "KetQua.out";
 	writeFile(s, &n);
 	int a[MAX][MAX];
 	readMatrix(s, a, n);
