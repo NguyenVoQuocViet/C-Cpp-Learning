@@ -9,7 +9,7 @@
 
 using namespace std;
 using ll = long long;
-
+//tim khoang cach xa nhat co hieu dung bang k
 int main()
 {
     int n, k;

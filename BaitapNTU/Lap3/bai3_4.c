@@ -12,7 +12,7 @@ void nhap(char* s)
 int doDai(char* s)
 {
 	if(*s == '\0')
-		return ;
+		return 0;
 	return 1 + doDai(s + 1);
 }
 
@@ -28,14 +28,14 @@ int demThuong(char* s)
 
 int palin(char* s, int i, int n)
 {
-	if(i > n)
+	if(i >= n)
 	{
 		return 1;	
 	}
-	if(s[i] != s[n - i])
+	if(s[i] != s[n])
 		return 0;
 	else
-		return palin(s, i + 1, n);
+		return palin(s, i + 1, n - 1);
 	
 }
 
@@ -51,6 +51,7 @@ int tongChuSo(char* s)
 	else
 		return tongChuSo(s + 1);
 }
+
 int main()
 {
 	char* s = (char*)malloc(101);;
