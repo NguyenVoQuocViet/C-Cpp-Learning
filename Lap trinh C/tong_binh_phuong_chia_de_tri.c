@@ -24,6 +24,7 @@ int tong(int l, int r)
 int main()
 {
     int n;
+    printf("nhap n: ");
     scanf("%d", &n);
     printf("%d", tong(1, n));
     return 0;
