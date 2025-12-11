@@ -14,3 +14,5 @@ cautruc.c
 File_C.c 
 nhap.c 
 nhap.cpp
+*.inp
+*.out
